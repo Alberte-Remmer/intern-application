@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansøgning</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Alberte Remmer</div>
+            <div>
+                <ul class="nav-links">
+
+                    <li><a href="#experience">Kompetencer</a></li>
+                    <li><a href="#about">Omkring mig</a></li>
+                    <li><a href="#projects">Projekter</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Alberte Remmer</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <ul>
+
+                        <li><a href="#experience" onclick="toggleMenu()">Kompetencer</a></li>
+                        <li><a href="#about" onclick="toggleMenu()">Omkring mig</a></li>
+                        <li><a href="#projects" onclick="toggleMenu()">Projekter</a></li>
+                        <li><a href="#contact" onclick="toggleMenu()">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <section id="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+
+            <div id="profile">
+                <div class="section__pic-container">
+                    <img src="./assets/portraitpicture.jpg" alt="Alberte Remmers profile picture">
+                </div>
+                <div class="section__text">
+                    <p class="section__text__p1">Hej, jeg hedder </p>
+                    <h1 class="title">Alberte Remmer</h1>
+                    <p class="section__text__p2">Kommende Frontend Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">Download
+                            CV</button>
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">Kontaktinfo</button>
+                    </div>
+                    <div id="socials-container">
+                        <img src="./assets/linkedin_blå.png" alt="My LinkedIn profile" class="icon"
+                            onclick="location.href='https://www.linkedin.com/in/alberte-remmer/'">
+                        <img src="./assets/github_blå.png" alt="My Github profile" class="icon"
+                            onclick="location.href='https://github.com/Alberte-Remmer'">
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="experience" class="hidden">
+            <p class="section__text__p1">Udforsk mine</p>
+            <h1 class="title">Kompetencer</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Programmering og prototyping</h2>
+                        <div class="article-container">
+                            <article class="hidden"><img src="./assets/html-5.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/css-3_bl.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/java-script_gul.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/figma_farve.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>Figma</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frameworks og webflow</h2>
+                        <div class="article-container">
+                            <article class="hidden"><img src="./assets/physics.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Introduceret</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/typescript_farve.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p>Introduceret</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/github.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/astro_farve.png" alt="Experience icon"
+                                    class="icon icon_astro">
+                                <div>
+                                    <h3>Astro</h3>
+                                    <p>Grundlæggende</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
+        </section>
+        <section id="about" class="hidden2">
+            <p class="section__text__p1">Få mere at vide</p>
+            <h1 class="title">Omkring mig</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/mig_rigtig.png" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+
+                        <div class="details-container left-aligned hidden2">
+                            <div class="icon-title-container"><img src="./assets/medal.png" alt="Experience icon"
+                                    class="icon">
+                                <h3>Erfaring</h3>
+                            </div>
+
+                            <p> Hjælpelærer i kodning (KEA) <br> Valgfag i Frontend (KEA)</p>
+                        </div>
+                        <div class="details-container left-aligned hidden2">
+                            <div class="icon-title-container">
+                                <img src="./assets/education.png" alt="Education icon" class="icon">
+                                <h3>Uddannelse</h3>
+                            </div>
+
+                            <p>Multimediedesign (KEA)<br> Bachelor i Sociologi (KU)</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Mit navn er Alberte, jeg er 28 år og studerer multimediedesign på KEA. Jeg har set frem til
+                            mit praktikforløb gennem
+                            hele studiet, fordi jeg brænder for at kode og udvikle digitale løsninger. <br /> <br /> Jeg
+                            motiveres af
+                            processen med at omsætte idéer til konkrete websites. Som hjælpelærer i kodning har
+                            jeg oplevet, hvor givende
+                            det er at dele min
+                            begejstring, og den samme energi tager jeg med ind i mit udviklingsarbejde.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#projects'">
+        </section>
+
+        <!-- <section id="experience" class="hidden">
+            <p class="section__text__p1">Udforsk mine</p>
+            <h1 class="title">Kompetencer</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Programmering og prototyping</h2>
+                        <div class="article-container">
+                            <article class="hidden"><img src="./assets/html.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/css-3.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/java-script.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/tool.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Figma</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Frameworks og webflow</h2>
+                        <div class="article-container">
+                            <article class="hidden"><img src="./assets/atom.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>React</h3>
+                                    <p>Introduceret</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/typescript.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>TypeScript</h3>
+                                    <p>Introduceret</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/github.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Øvet</p>
+                                </div>
+                            </article>
+                            <article class="hidden"><img src="./assets/simple-icons--astro.png" alt="Experience icon"
+                                    class="icon">
+                                <div>
+                                    <h3>Astro</h3>
+                                    <p>Grundlæggende</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon arrow"
+                onclick="location.href='./#projects'">
+        </section> -->
+
+        <section id="projects" class="hidden2">
+            <p class="section__text__p1">Se mine seneste</p>
+            <h1 class="title">Projekter</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="project-container hidden2">
+                        <div class="article-container">
+                            <img src="./assets/misbrugsportalen.png" alt="Project 1" class="project-img">
+                            <div class="tech-tags">
+                                <span class="tag">Astro</span>
+                                <span class="tag">Modulbaseret udvikling</span>
+                            </div>
+                        </div>
+
+
+                        <h2 class="experience-sub-title project-title">Kampagnesite</h2>
+                        <div class="project-description">
+                            <p>One-pager til Misbrugsportalen for at tiltrække flere frivillige.</p>
+
+                        </div>
+
+
+                        <div class="btn-container"> <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/misbrugsportalen/misbrugsportalen.git'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://misbrugsportalen-kampagnesite.netlify.app/'">
+                                Live Demo
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="project-container hidden2">
+
+                        <div class="article-container">
+                            <img src="./assets/todoapp.png" alt="Project 2" class="project-img">
+                            <div class="tech-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Dynamisk design</span>
+                            </div>
+                        </div>
+
+
+                        <h2 class="experience-sub-title project-title">To-Do applikation</h2>
+                        <div class="project-description">
+                            <p>To-do webapplikation til organisering og opgavestyring.</p>
+
+                        </div>
+
+                        <div class="btn-container"> <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Alberte-Remmer/todoapp-rigtig'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://alberte-remmer.github.io/todoapp-rigtig/'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-container hidden2">
+                        <div class="article-container">
+                            <img src="./assets/eksamen.png" alt="Project 3" class="project-img">
+                            <div class="tech-tags">
+                                <span class="tag">Responsivt webdesign</span>
+
+
+
+                            </div>
+                        </div>
+
+                        <h2 class="experience-sub-title project-title">Portfolio showcase</h2>
+                        <div class="project-description">
+                            <p>Præsentation af projekter udført på første semester</p>
+
+                        </div>
+
+                        <div class="btn-container"> <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Alberte-Remmer/portfolio.git'">
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://alberte-remmer.github.io/portfolio/'">
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/down-arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">For mere information</p>
+            <h1 class="title">Kontakt mig</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+                    <p><a href="mailto:alberteremmer97@gmail.com">Alberteremmer97@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/phone-call.png" alt="Telephone icon" class="icon contact-icon">
+                    <p class="phone">26138035</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#experience">Kompetencer</a></li>
+                    <li><a href="#about">Omkring mig</a></li>
+
+                    <li><a href="#projects">Projekter</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Alberte Remmer. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
