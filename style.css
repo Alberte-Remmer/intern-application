@@ -279,6 +279,7 @@ section {
 
 .btn-color-1:hover {
   background-color: black;
+  border: black 0.1rem solid;
 }
 
 .btn-color-2 {
