@@ -25,6 +25,23 @@ body {
   max-width: 100%;
 }
 
+/* Fix for anchor link navigation - vis elementer korrekt når de er targets */
+section:target.hidden,
+section:target.hidden2 {
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  transform: translateX(0) !important;
+  transition: none !important;
+}
+
+section:target .hidden,
+section:target .hidden2 {
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  transform: translateX(0) !important;
+  transition: none !important;
+}
+
 p {
   color: #555555;
 }
